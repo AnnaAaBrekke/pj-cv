@@ -2,7 +2,7 @@ import React from "react";
 
 const PortfolioHeader = () => {
   return (
-    <header className="bg-gray-900 text-white py-20 px-6 md:px-12">
+    <header className="bg-gray-900 text-white py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Left side - Text Content */}
         <div className="text-center md:text-left md:w-1/2 mb-8 md:mb-0">

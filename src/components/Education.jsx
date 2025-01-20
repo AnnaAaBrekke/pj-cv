@@ -11,11 +11,14 @@ const EducationCard = () => {
   ];
 
   return (
-    <section id="education" className="py-10 bg-gray-50 justify-center items-center">
+    <section
+      id="education"
+      className="py-10 bg-gray-50 justify-center items-center"
+    >
       <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
         Utdanning
       </h2>
-      <div className="items-center">
+      <div className="items-center md:px-48">
         {education.map((edu, index) => (
           <div
             key={index}

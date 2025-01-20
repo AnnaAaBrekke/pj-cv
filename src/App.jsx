@@ -6,6 +6,7 @@ import Diploma from "./components/Diploma";
 import Navbar from "./components/Navbar";
 import PortfolioHeader from "./components/Header";
 import ContactMe from "./components/Contact";
+import QuotesSection from "./components/Quotes";
 
 const App = () => {
   useEffect(() => {
@@ -36,6 +37,10 @@ const App = () => {
       <Navbar />
       <PortfolioHeader />
       <div className="px-4 py-10">
+        <section id="attest-sitater">
+          <QuotesSection />
+        </section>
+
         {/* Sections */}
         <section id="arbeidserfaring">
           <Timeline />
@@ -52,9 +57,9 @@ const App = () => {
         <section id="kursbevis">
           <Diploma />
         </section>
-        <section id="kontakt-meg">
+        <footer id="kontakt">
           <ContactMe />
-        </section>
+        </footer>
       </div>
     </div>
   );

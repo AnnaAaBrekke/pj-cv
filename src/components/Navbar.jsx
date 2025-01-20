@@ -8,34 +8,34 @@ const Navbar = () => {
         <div className="text-2xl font-extrabold text-yellow-400">CV</div>
 
         {/* Navigation Links */}
-        <div className="space-x-6">
+        <div className="md:space-x-6 space-x-2">
           <a
             href="#arbeidserfaring"
-            className="text-lg font-medium hover:text-yellow-400 transition-all duration-300"
+            className="text-sm sm:text-md md:text-lg font-medium hover:text-yellow-400 transition-all duration-300"
           >
             Arbeidserfaring
           </a>
           <a
             href="#frivillig-arbeid"
-            className="text-lg font-medium hover:text-yellow-400 transition-all duration-300"
+            className="text-sm sm:text-md md:text-lg font-medium hover:text-yellow-400 transition-all duration-300"
           >
             Frivillig Arbeid
           </a>
           <a
             href="#utdanning"
-            className="text-lg font-medium hover:text-yellow-400 transition-all duration-300"
+            className="text-sm sm:text-md md:text-lg font-medium hover:text-yellow-400 transition-all duration-300"
           >
             Utdanning
           </a>
           <a
             href="#kursbevis"
-            className="text-lg font-medium hover:text-yellow-400 transition-all duration-300"
+            className="text-sm sm:text-md md:text-lg font-medium hover:text-yellow-400 transition-all duration-300"
           >
             Kursbevis
           </a>
           <a
             href="#kontakt"
-            className="text-lg font-medium hover:text-yellow-400 transition-all duration-300"
+            className="text-sm sm:text-md md:text-lg font-medium hover:text-yellow-400 transition-all duration-300"
           >
             Kontakt
           </a>

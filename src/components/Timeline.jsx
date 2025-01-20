@@ -48,30 +48,28 @@ const Timeline = () => {
   ];
 
   return (
-    <section className="py-10 bg-gray-50">
-      <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
+    <section className="py-16 bg-gray-50">
+      <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-800">
         Arbeidserfaring
       </h2>
-      <div className="relative max-w-5xl mx-auto">
+      <div className="grid gap-10 max-w-5xl mx-auto px-4 sm:grid-cols-1 lg:grid-cols-2">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="mb-8 flex flex-col md:flex-row md:items-start"
+            className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="flex-shrink-0 w-32 text-gray-500 font-bold text-lg">
+            <div className="text-gray-500 font-bold text-lg mb-2">
               {exp.year}
             </div>
-            <div className="ml-4">
-              <h3 className="text-xl font-semibold text-gray-800">
-                {exp.position}
-              </h3>
-              <p className="text-gray-600 italic">{exp.company}</p>
-              <ul className="mt-2 list-disc list-inside text-gray-700">
-                {exp.details.map((detail, idx) => (
-                  <li key={idx}>{detail}</li>
-                ))}
-              </ul>
-            </div>
+            <h3 className="text-xl font-semibold text-gray-800">
+              {exp.position}
+            </h3>
+            <p className="text-gray-600 italic mb-4">{exp.company}</p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              {exp.details.map((detail, idx) => (
+                <li key={idx}>{detail}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

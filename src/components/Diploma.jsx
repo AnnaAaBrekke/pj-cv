@@ -7,7 +7,7 @@ const Diploma = () => {
       image: "src/assets/images/diplomas/diploma_reisesikkerhet_brekke.jpg",
     },
     {
-      title: "Krisehåndtering og stabsarbeid",
+      title: "Krisehåndtering og Stabsarbeid",
       image:
         "src/assets/images/diplomas/Kursbevis kristehåndtering -2024 Brekke.jpg",
     },
@@ -42,7 +42,7 @@ const Diploma = () => {
                 download
                 className="text-blue-600 hover:text-blue-800"
               >
-                Last ned {diploma.title} (Bilde)
+                Last ned {diploma.title}
               </a>
             </div>
           </div>
