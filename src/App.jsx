@@ -1,64 +1,63 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Timeline from "./components/Timeline";
+import Volunteer from "./components/Volunteer";
+import EducationCard from "./components/Education";
+import Diploma from "./components/Diploma";
+import Navbar from "./components/Navbar";
+import PortfolioHeader from "./components/Header";
+import ContactMe from "./components/Contact";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    const handleAnchorLink = (event) => {
+      if (event.target.tagName === "A" && event.target.hash) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = event.target.hash;
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    // Attach the event listener to handle smooth scroll
+    document.querySelector("nav").addEventListener("click", handleAnchorLink);
+
+    return () => {
+      document
+        .querySelector("nav")
+        .removeEventListener("click", handleAnchorLink);
+    };
+  }, []);
+
   return (
     <div>
-      {/* Header Section */}
-      <header>
-        <h1>Per-Jan Brekke</h1>
-        <h2>Teamleder presse- og samfunn i Utlendingsdirektoratet (UDI)</h2>
-        <p>+47 92664526</p>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/perjan/details/organizations/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn: https://www.linkedin.com/in/perjan/details/organizations/
-          </a>
-        </p>
-      </header>
+      <Navbar />
+      <PortfolioHeader />
+      <div className="px-4 py-10">
+        {/* Sections */}
+        <section id="arbeidserfaring">
+          <Timeline />
+        </section>
 
-      {/* Kjernekompetanse Section */}
-      <section id="kjernekompetanse">
-        <h2>Kjernekompetanse</h2>
-        <p>
-          Ledelse, kommunikasjon eksternt og internt, mediehåndtering,
-          omdømmebygging
-        </p>
-      </section>
+        <section id="frivillig-arbeid">
+          <Volunteer />
+        </section>
 
-      {/* Arbeidserfaring Section */}
-      <div>
-        <Timeline />
+        <section id="utdanning">
+          <EducationCard />
+        </section>
+
+        <section id="kursbevis">
+          <Diploma />
+        </section>
+        <section id="kontakt-meg">
+          <ContactMe />
+        </section>
       </div>
-
-      {/* Utdanning Section */}
-      <section id="utdanning">
-        <h2>Utdanning</h2>
-        <div>
-          <h3>
-            1984-1985: Bachelor kommunal planlegging og offentlig administrasjon
-          </h3>
-          <p>Møre og Romsdal Distriktshøgskule</p>
-        </div>
-      </section>
-
-      {/* Frivillig Arbeid Section */}
-      <section id="frivillig-arbeid">
-        <h2>Frivillig arbeid</h2>
-        <div>
-          <h3>2020:</h3>
-          <p>Pressesjef NM på ski</p>
-        </div>
-        <div>
-          <h3>2017 - Nå:</h3>
-          <p>Pressesjef for World Cup Drammen</p>
-        </div>
-      </section>
     </div>
   );
-}
+};
 
 export default App;
