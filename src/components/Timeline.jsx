@@ -52,7 +52,7 @@ const Timeline = () => {
       <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-800">
         Arbeidserfaring
       </h2>
-      <div className="grid gap-10 max-w-5xl mx-auto px-4 sm:grid-cols-1 lg:grid-cols-2">
+      <div className="grid gap-10 max-w-5xl mx-auto px-4">
         {experiences.map((exp, index) => (
           <div
             key={index}

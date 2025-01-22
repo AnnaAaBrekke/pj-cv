@@ -3,21 +3,21 @@ import React from "react";
 const Volunteer = () => {
   const volunteerWork = [
     {
-      year: "2020",
-      position: "Pressesjef",
-      company: "NM på ski",
-      image: "src/assets/images/ski-nm.jpg", // Bildesti (plasser bildene i public/images)
-    },
-    {
       year: "2017 - Nå",
       position: "Pressesjef",
       company: "World Cup Drammen",
-      image: "src/assets/images/worldcup-drammen.jpg", // Bildesti (plasser bildene i public/images)
+      image: "src/assets/images/worldcup-drammen.jpg",
+    },
+    {
+      year: "2020",
+      position: "Pressesjef",
+      company: "NM på ski",
+      image: "src/assets/images/nm-ski.jpeg",
     },
   ];
 
   return (
-    <section id="frivillig-arbeid" className="py-10 bg-gray-50">
+    <section id="frivillig-arbeid" className="bg-gray-50 p-6">
       <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
         Frivillig Arbeid
       </h2>
@@ -25,13 +25,13 @@ const Volunteer = () => {
         {volunteerWork.map((work, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden"
+            className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden p-10"
           >
             {/* Image */}
             <img
               src={work.image}
               alt={work.company}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain rounded-lg"
             />
 
             {/* Content */}

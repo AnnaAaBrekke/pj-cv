@@ -11,6 +11,10 @@ const Diploma = () => {
       image:
         "src/assets/images/diplomas/Kursbevis kristehåndtering -2024 Brekke.jpg",
     },
+    {
+      title: "Lederutviklingsprogram",
+      image: "src/assets/images/diplomas/Lederutdanning_diplom.jpg",
+    },
   ];
 
   return (
@@ -18,14 +22,14 @@ const Diploma = () => {
       <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
         Kursbevis
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {/* Map over diplomas array to display each image */}
         {diplomas.map((diploma, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
+            className="bg-white shadow-lg rounded-lg overflow-hidden text-center max-w-sm"
           >
-            <div className="p-4">
+            <div className="p-4 w-80">
               <h3 className="text-xl font-semibold text-gray-800">
                 {diploma.title}
               </h3>
@@ -33,7 +37,7 @@ const Diploma = () => {
             <img
               src={diploma.image}
               alt={diploma.title}
-              className="w-full h-64 object-cover"
+              className="w-full h-64 object-contain"
             />
             <div className="p-4">
               {/* Download Link */}

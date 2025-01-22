@@ -47,7 +47,7 @@ const ContactMe = () => {
               />
             </div>
             <a
-              href="https://www.linkedin.com/in/perjan/details/organizations/"
+              href="https://www.linkedin.com/in/perjan/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg font-medium text-gray-300 hover:text-yellow-400"
