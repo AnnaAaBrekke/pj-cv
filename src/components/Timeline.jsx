@@ -4,7 +4,7 @@ const Timeline = () => {
   const experiences = [
     {
       year: "2022 - Nå",
-      position: "Teamleder presse- og samfunn",
+      position: "Teamleder presse- og samfunnskontakt",
       company: "Utlendingsdirektoratet (UDI)",
       details: [
         "Senior presserådgiver fra mai 2022",
@@ -19,7 +19,7 @@ const Timeline = () => {
     },
     {
       year: "2013 - 2022",
-      position: "Prosjektleder og Kommunikasjonsrådgiver",
+      position: "Prosjektleder og kommunikasjonsrådgiver",
       company: "BDO/Godt Sagt Kommunikasjon AS",
       details: [
         "Prosjektleder",
