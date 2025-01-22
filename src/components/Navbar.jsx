@@ -46,7 +46,7 @@ const Navbar = () => {
             href="#frivillig-arbeid"
             className="text-sm sm:text-md md:text-lg font-medium hover:text-yellow-400 transition-all duration-300"
           >
-            Frivillig Arbeid
+            Frivillig arbeid
           </a>
           <a
             href="#utdanning"

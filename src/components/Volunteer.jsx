@@ -19,7 +19,7 @@ const Volunteer = () => {
   return (
     <section id="frivillig-arbeid" className="bg-gray-50 p-6">
       <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-800">
-        Frivillig Arbeid
+        Frivillig arbeid
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {volunteerWork.map((work, index) => (
