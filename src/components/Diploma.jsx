@@ -4,16 +4,15 @@ const Diploma = () => {
   const diplomas = [
     {
       title: "Reisesikkerhet",
-      image: "src/assets/images/diplomas/diploma_reisesikkerhet_brekke.jpg",
+      image: "images/diplomas/diploma_reisesikkerhet_brekke.jpg",
     },
     {
       title: "Krisehåndtering og Stabsarbeid",
-      image:
-        "src/assets/images/diplomas/Kursbevis kristehåndtering -2024 Brekke.jpg",
+      image: "images/diplomas/Kursbevis kristehåndtering -2024 Brekke.jpg",
     },
     {
       title: "Lederutviklingsprogram",
-      image: "src/assets/images/diplomas/Lederutdanning_diplom.jpg",
+      image: "images/diplomas/Lederutdanning_diplom.jpg",
     },
   ];
 

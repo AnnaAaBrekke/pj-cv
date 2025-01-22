@@ -27,7 +27,7 @@ const PortfolioHeader = () => {
         <div className="md:w-1/2 flex justify-center items-center">
           <div className="relative">
             <img
-              src="/src/assets/images/profile.jpeg" 
+              src="/images/profile.jpeg"
               alt="Per-Jan Brekke"
               className="w-[350px] h-[450px] rounded-lg shadow-2xl object-cover border-4 border-yellow-500"
             />

@@ -6,13 +6,13 @@ const Volunteer = () => {
       year: "2017 - Nå",
       position: "Pressesjef",
       company: "World Cup Drammen",
-      image: "src/assets/images/worldcup-drammen.jpg",
+      image: "images/worldcup-drammen.jpg",
     },
     {
       year: "2020",
       position: "Pressesjef",
       company: "NM på ski",
-      image: "src/assets/images/nm-ski.jpeg",
+      image: "images/nm-ski.jpeg",
     },
   ];
 
