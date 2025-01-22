@@ -11,7 +11,7 @@ const PortfolioHeader = () => {
             Per-Jan Brekke
           </h1>
           <p className="text-lg mb-6">
-            Teamleder presse- og samfunn i Utlendingsdirektoratet (UDI)
+            Teamleder presse- og samfunnskontakt i Utlendingsdirektoratet (UDI)
           </p>
           <a
             href="https://www.linkedin.com/in/perjan/"
