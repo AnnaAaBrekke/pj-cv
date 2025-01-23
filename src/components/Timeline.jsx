@@ -46,6 +46,28 @@ const Timeline = () => {
         "Ansvarlig for nettside og Facebook",
       ],
     },
+    {
+      year: "1988 - 2011",
+      position: "Nyhetsjournalist, sportsjournalist, redaktør",
+      company: "Drammens Tidende",
+      details: [
+        "Nyhetsjournalist - Kommunal politikk og lokalsamfunn",
+        "Sportsjournalist - Allround",
+        "Redaktør - med personalansvar for Sport (avis, radio, tv og web)",
+      ],
+    },
+    {
+      year: "1986 - 1988",
+      position: "Nyhetsjournalist og fotograf",
+      company: "Avisa Møre",
+      details: [],
+    },
+    {
+      year: "1985 - 1986",
+      position: "Nyhetsjournalist og fotograf",
+      company: "Fjordenes Tidende",
+      details: [],
+    },
   ];
 
   return (
@@ -66,11 +88,13 @@ const Timeline = () => {
               {exp.position}
             </h3>
             <p className="text-gray-600 italic mb-4">{exp.company}</p>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              {exp.details.map((detail, idx) => (
-                <li key={idx}>{detail}</li>
-              ))}
-            </ul>
+            {exp.details.length > 0 && (
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                {exp.details.map((detail, idx) => (
+                  <li key={idx}>{detail}</li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
