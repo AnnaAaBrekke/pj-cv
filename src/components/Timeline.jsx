@@ -53,7 +53,7 @@ const Timeline = () => {
       details: [
         "Nyhetsjournalist - Kommunal politikk og lokalsamfunn",
         "Sportsjournalist - Allround",
-        "Redaktør - med personalansvar for Sport (avis, radio, tv og web)",
+        "Redaktør - med personalansvar og ledelse av sport-redaksjonen (avis, radio, tv og web)",
       ],
     },
     {
